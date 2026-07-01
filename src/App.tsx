@@ -49,9 +49,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex-shrink-0 flex items-center gap-1 cursor-pointer">
-              {/* Logo Data-So */}
+              {/* Logo */}
               <span className="font-primary font-bold text-2xl tracking-tight text-[#272725]">
-                data.<span className="text-[#575460]">Só</span>
+                La <span className="text-[#575460]">Mentoría</span>
               </span>
             </div>
             
@@ -59,7 +59,7 @@ export default function App() {
             <div className="hidden md:flex space-x-8 items-center">
               <a href="#equipo" className="text-sm font-semibold text-gray-500 hover:text-[#272725] transition-colors">El Equipo</a>
               <a href="#servicios" className="text-sm font-semibold text-gray-500 hover:text-[#272725] transition-colors">Servicios</a>
-              <a href="#cursos" className="text-sm font-semibold text-gray-500 hover:text-[#272725] transition-colors">Cursos</a>
+              <a href="#mentoria" className="text-sm font-semibold text-gray-500 hover:text-[#272725] transition-colors">La Mentoría</a>
               <a 
                 href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
                 target="_blank" 
@@ -106,11 +106,11 @@ export default function App() {
               Servicios
             </a>
             <a 
-              href="#cursos" 
+              href="#mentoria" 
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-lg text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-[#272725]"
             >
-              Cursos
+              La Mentoría
             </a>
             <div className="pt-2">
               <a 
@@ -148,7 +148,7 @@ export default function App() {
               
               {/* Overview del Brand Book */}
               <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed">
-                Consultoría en Valencia que ayuda a las PYMES a navegar la transformación digital. Empoderamos tus decisiones mediante <strong>tecnología centrada en las personas</strong>, eficiencia operativa y formación en Gemini AI.
+                Consultoría en España y LATAM que ayuda a navegar la transformación digital. Empoderamos tus decisiones mediante <strong>tecnología centrada en las personas</strong>, eficiencia operativa y Formación en IA generativa, aplicada a tu negocio y con propósito.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -161,10 +161,10 @@ export default function App() {
                   Agendar Sesión 1:1 <ArrowRight size={20} />
                 </a>
                 <a 
-                  href="#cursos" 
+                  href="#mentoria" 
                   className="flex justify-center items-center gap-2 bg-white border-2 border-gray-200 text-[#272725] px-8 py-4 rounded-full font-semibold hover:border-[#575460] transition-all"
                 >
-                  Ver Cursos
+                  Ver Mentoría
                 </a>
               </div>
             </motion.div>
@@ -239,11 +239,11 @@ export default function App() {
                 className="bg-white rounded-[2rem] p-8 border border-gray-100 hover:shadow-lg transition-all flex flex-col items-center text-center"
               >
                 <div className="w-20 h-20 bg-gray-200 rounded-full mb-6 overflow-hidden">
-                  <img src="https://ui-avatars.com/api/?name=Luis+M&background=575460&color=fff&size=150" alt="Luis M." className="w-full h-full object-cover" />
+                  <img src="https://ui-avatars.com/api/?name=Mariela+Sanchez&background=575460&color=fff&size=150" alt="Mariela Sanchez" className="w-full h-full object-cover" />
                 </div>
-                <h3 className="font-primary text-xl font-bold mb-2">Luis M.</h3>
-                <p className="text-gray-600 mb-6 flex-grow">Experto en Datos, Analytics y Transformación Digital.</p>
-                <a href="https://www.linkedin.com/in/lmsdatos/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-[#575460] bg-[#f4f4f5] px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
+                <h3 className="font-primary text-xl font-bold mb-2">Mariela Sanchez</h3>
+                <p className="text-gray-600 mb-6 flex-grow">Experta en Datos, Analytics y Transformación Digital.</p>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-[#575460] bg-[#f4f4f5] px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
                   <Linkedin size={16} /> Ver LinkedIn
                 </a>
               </motion.div>
@@ -275,9 +275,9 @@ export default function App() {
                 Transformamos datos complejos en dashboards intuitivos y visuales para facilitar la toma de decisiones estratégicas.
               </p>
               <ul className="space-y-4">
-                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Power BI</li>
-                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Looker Studio</li>
-                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Diseño de KPIs</li>
+                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Herramientas BI</li>
+                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Acompañamiento en la implantación</li>
+                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Gestión del cambio</li>
               </ul>
             </motion.div>
 
@@ -300,9 +300,9 @@ export default function App() {
                 Capacitación práctica para equipos en herramientas digitales de última generación para multiplicar resultados.
               </p>
               <ul className="space-y-4 mb-8">
-                <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Gemini & ChatGPT</li>
-                <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Google Workspace</li>
-                <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Automatización</li>
+                <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> IAs generativas</li>
+                <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Google Workspace + Gemini</li>
+                <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Automatizaciones con GAS</li>
               </ul>
               <a href="https://calendar.app.google/L2kNYujpQHvjAvkc8" target="_blank" rel="noopener noreferrer" className="w-full text-center bg-white text-[#272725] py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors">
                 Agendar Consultoría Gratuita
@@ -325,21 +325,20 @@ export default function App() {
                 Análisis exhaustivo y rediseño de procesos administrativos para lograr una gestión verdaderamente eficiente.
               </p>
               <ul className="space-y-4">
-                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Excel & SQL Avanzado</li>
-                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Gestión Ágil (PM)</li>
-                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Asesoramiento financiero</li>
+                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Control de gestión ágil</li>
+                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Acompañamiento en la transformación digital</li>
               </ul>
             </motion.div>
           </div>
         </section>
 
-        {/* CURSOS SECTION */}
-        <section id="cursos" className="py-24 bg-[#f9f9fa] border-t border-gray-100">
+        {/* MENTORÍA SECTION */}
+        <section id="mentoria" className="py-24 bg-[#f9f9fa] border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="font-primary text-3xl md:text-5xl font-bold mb-6 text-[#272725]">Nuestros Cursos</h2>
+              <h2 className="font-primary text-3xl md:text-5xl font-bold mb-6 text-[#272725]">La Mentoría</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Aprendizaje continuo y práctico. Domina la Inteligencia Artificial y optimiza tu tiempo a tu propio ritmo.
+                Aprendizaje continuo y práctico. Domina la Inteligencia Artificial y optimiza tu tiempo a tu propio ritmo con nuestras mentorías personalizadas.
               </p>
             </div>
 
@@ -495,7 +494,7 @@ export default function App() {
       <footer className="bg-[#f9f9fa] py-12 border-t border-gray-100 font-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="font-primary font-bold text-2xl tracking-tight text-[#272725] mb-4 block">
-            data.<span className="text-[#575460]">Só</span>
+            La <span className="text-[#575460]">Mentoría</span>
           </span>
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Consultoría & Formación en Datos e IA. Todos los derechos reservados.
