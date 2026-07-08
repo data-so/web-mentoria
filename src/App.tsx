@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { 
   ArrowRight, 
   Linkedin, 
+  Instagram,
   BarChart3, 
   BrainCircuit, 
   Database, 
@@ -136,33 +137,37 @@ export default function App() {
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
-              <div className="inline-flex items-center gap-2 bg-[#f4f4f5] text-[#575460] px-4 py-1.5 rounded-full text-sm font-bold tracking-wide uppercase">
+              {/* OPTIMIZADO UX */}
+              <div className="inline-flex items-center gap-2 bg-[#f4f4f5] text-[#272725] px-4 py-1.5 rounded-full text-sm font-extrabold tracking-wide uppercase border border-gray-200">
                 <span className="w-2 h-2 rounded-full bg-[#575460] animate-pulse"></span>
                 Consultoría & Formación
               </div>
               
               {/* Tagline Oficial */}
+              {/* OPTIMIZADO UX */}
               <h1 className="font-primary text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-[#272725]">
-                Transformamos datos en <span className="text-[#575460]">decisiones</span> y procesos en <span className="text-[#575460]">resultados</span>
+                Transforma tu negocio con <span className="text-[#575460]">IA y datos</span>
               </h1>
               
               {/* Overview del Brand Book */}
+              {/* OPTIMIZADO UX */}
               <p className="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed">
-                Consultoría en España y LATAM que ayuda a navegar la transformación digital. Empoderamos tus decisiones mediante <strong>tecnología centrada en las personas</strong>, eficiencia operativa y Formación en IA generativa, aplicada a tu negocio y con propósito.
+                Ayudamos a directivos de PYMEs en España y LATAM a automatizar procesos operativos, optimizar el rendimiento de sus equipos y tomar mejores decisiones mediante Inteligencia Artificial generativa y analítica de datos aplicada.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              {/* OPTIMIZADO UX */}
+              <div className="flex flex-col sm:flex-row gap-6 pt-4">
                 <a 
                   href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex justify-center items-center gap-2 bg-[#272725] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#575460] transition-all shadow-md hover:-translate-y-1"
+                  className="flex justify-center items-center gap-2 bg-[#272725] text-white px-8 py-4 rounded-full font-bold hover:bg-[#575460] transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
                 >
                   Agendar Sesión 1:1 <ArrowRight size={20} />
                 </a>
                 <a 
                   href="#mentoria" 
-                  className="flex justify-center items-center gap-2 bg-white border-2 border-gray-200 text-[#272725] px-8 py-4 rounded-full font-semibold hover:border-[#575460] transition-all"
+                  className="flex justify-center items-center gap-2 bg-white border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full font-semibold hover:text-[#272725] hover:border-[#272725] hover:bg-gray-50/50 transition-all"
                 >
                   Ver Mentoría
                 </a>
@@ -204,46 +209,67 @@ export default function App() {
               className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
               {/* Perfil 1 */}
+              {/* OPTIMIZADO UX */}
               <motion.div 
                 variants={itemVariants}
                 className="bg-white rounded-[2rem] p-8 border border-gray-100 hover:shadow-lg transition-all flex flex-col items-center text-center"
               >
-                <div className="w-20 h-20 bg-gray-200 rounded-full mb-6 overflow-hidden">
-                  <img src="https://ui-avatars.com/api/?name=Sofia+Aguirre&background=575460&color=fff&size=150" alt="Sofía Aguirre" className="w-full h-full object-cover" />
+                <div className="w-24 h-24 bg-gray-100 rounded-full mb-6 overflow-hidden border-2 border-gray-100 shadow-inner flex-shrink-0">
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1MAnRrp1ynTFlvYC260LtT1bG91mHpECd" 
+                    referrerPolicy="no-referrer"
+                    alt="Sofía Aguirre" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
                 <h3 className="font-primary text-xl font-bold mb-2">Sofía Aguirre</h3>
-                <p className="text-gray-600 mb-6 flex-grow">Especialista en IA y Optimización de Procesos.</p>
+                <p className="text-gray-600 mb-6 flex-grow text-sm leading-relaxed">
+                  Especialista en IA con +5 años optimizando procesos en entornos corporativos.<br />
+                  Founder de <a href="https://www.data-so.com/" target="_blank" rel="noopener noreferrer" className="text-[#575460] font-semibold underline hover:text-[#272725] transition-colors">data-so.com</a>
+                </p>
                 <a href="https://www.linkedin.com/in/sofiaaguirree/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-[#575460] bg-[#f4f4f5] px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
                   <Linkedin size={16} /> Ver LinkedIn
                 </a>
               </motion.div>
 
               {/* Perfil 2 */}
+              {/* OPTIMIZADO UX */}
               <motion.div 
                 variants={itemVariants}
                 className="bg-white rounded-[2rem] p-8 border border-gray-100 hover:shadow-lg transition-all flex flex-col items-center text-center"
               >
-                <div className="w-20 h-20 bg-gray-200 rounded-full mb-6 overflow-hidden">
-                  <img src="https://ui-avatars.com/api/?name=Maria+Virginia+Ares&background=272725&color=fff&size=150" alt="María Virginia Ares" className="w-full h-full object-cover" />
+                <div className="w-24 h-24 bg-gray-100 rounded-full mb-6 overflow-hidden border-2 border-gray-100 shadow-inner flex-shrink-0">
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1AKGamcjzo-NwL-EIRYaEC2pahpODVKPj" 
+                    referrerPolicy="no-referrer"
+                    alt="María Virginia Ares" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
                 <h3 className="font-primary text-xl font-bold mb-2">María Virginia Ares</h3>
-                <p className="text-gray-600 mb-6 flex-grow">Consultora Financiera y Project Management.</p>
+                <p className="text-gray-600 mb-6 flex-grow text-sm leading-relaxed">Consultora Financiera y Project Manager con experiencia en LATAM y Europa.</p>
                 <a href="https://www.linkedin.com/in/mar%C3%ADavirginiaares/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-[#575460] bg-[#f4f4f5] px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
                   <Linkedin size={16} /> Ver LinkedIn
                 </a>
               </motion.div>
 
               {/* Perfil 3 */}
+              {/* OPTIMIZADO UX */}
               <motion.div 
                 variants={itemVariants}
                 className="bg-white rounded-[2rem] p-8 border border-gray-100 hover:shadow-lg transition-all flex flex-col items-center text-center"
               >
-                <div className="w-20 h-20 bg-gray-200 rounded-full mb-6 overflow-hidden">
-                  <img src="https://ui-avatars.com/api/?name=Mariela+Sanchez&background=575460&color=fff&size=150" alt="Mariela Sanchez" className="w-full h-full object-cover" />
+                <div className="w-24 h-24 bg-gray-100 rounded-full mb-6 overflow-hidden border-2 border-gray-100 shadow-inner flex-shrink-0">
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1yXXUEVXF2X99RF6H2NFaebTXW3qpQgB1" 
+                    referrerPolicy="no-referrer"
+                    alt="Mariela Sanchez" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
                 <h3 className="font-primary text-xl font-bold mb-2">Mariela Sanchez</h3>
-                <p className="text-gray-600 mb-6 flex-grow">Experta en Datos, Analytics y Transformación Digital.</p>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-[#575460] bg-[#f4f4f5] px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
+                <p className="text-gray-600 mb-6 flex-grow text-sm leading-relaxed">Experta en Datos y Analytics. Ha liderado transformaciones digitales en +30 empresas.</p>
+                <a href="https://www.linkedin.com/in/lmsdatos/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-[#575460] bg-[#f4f4f5] px-4 py-2 rounded-full hover:bg-gray-200 transition-colors">
                   <Linkedin size={16} /> Ver LinkedIn
                 </a>
               </motion.div>
@@ -260,6 +286,7 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             {/* Card 1 - Light */}
+            {/* OPTIMIZADO UX */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -271,17 +298,33 @@ export default function App() {
                 <BarChart3 className="text-[#272725]" size={28} />
               </div>
               <h3 className="font-primary text-2xl font-bold mb-4 text-[#272725]">Visualización de Datos</h3>
-              <p className="text-gray-600 mb-8 flex-grow leading-relaxed">
+              <p className="text-gray-600 mb-3 leading-relaxed">
                 Transformamos datos complejos en dashboards intuitivos y visuales para facilitar la toma de decisiones estratégicas.
               </p>
-              <ul className="space-y-4">
+              
+              <div className="mb-6 bg-emerald-50/60 text-emerald-800 px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-emerald-100/50">
+                <Zap size={16} className="text-emerald-600 flex-shrink-0" /> 
+                <span>Reduce hasta un 60% el tiempo de generación de informes.</span>
+              </div>
+
+              <ul className="space-y-4 flex-grow mb-8">
                 <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Herramientas BI</li>
                 <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Acompañamiento en la implantación</li>
                 <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Gestión del cambio</li>
               </ul>
+
+              <a 
+                href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-full text-center bg-[#272725] text-white py-3 rounded-xl font-bold hover:bg-[#575460] transition-colors"
+              >
+                Solicitar Propuesta
+              </a>
             </motion.div>
 
             {/* Card 2 - Dark (Highlighted con Obsidian Black) */}
+            {/* OPTIMIZADO UX */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -296,10 +339,16 @@ export default function App() {
                 <BrainCircuit className="text-white" size={28} />
               </div>
               <h3 className="font-primary text-2xl font-bold mb-4">Formación en IA y Productividad</h3>
-              <p className="text-gray-300 mb-8 flex-grow leading-relaxed">
+              <p className="text-gray-300 mb-3 leading-relaxed">
                 Capacitación práctica para equipos en herramientas digitales de última generación para multiplicar resultados.
               </p>
-              <ul className="space-y-4 mb-8">
+
+              <div className="mb-6 bg-white/10 text-emerald-300 px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-white/5">
+                <Zap size={16} className="text-emerald-400 flex-shrink-0" /> 
+                <span>Equipos más productivos desde la primera semana.</span>
+              </div>
+
+              <ul className="space-y-4 flex-grow mb-8">
                 <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> IAs generativas</li>
                 <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Google Workspace + Gemini</li>
                 <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Automatizaciones con GAS</li>
@@ -310,6 +359,7 @@ export default function App() {
             </motion.div>
 
             {/* Card 3 - Light */}
+            {/* OPTIMIZADO UX */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -321,13 +371,29 @@ export default function App() {
                 <Database className="text-[#272725]" size={28} />
               </div>
               <h3 className="font-primary text-2xl font-bold mb-4 text-[#272725]">Consultoría de Negocio</h3>
-              <p className="text-gray-600 mb-8 flex-grow leading-relaxed">
+              <p className="text-gray-600 mb-3 leading-relaxed">
                 Análisis exhaustivo y rediseño de procesos administrativos para lograr una gestión verdaderamente eficiente.
               </p>
-              <ul className="space-y-4">
+
+              <div className="mb-6 bg-emerald-50/60 text-emerald-800 px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-emerald-100/50">
+                <Zap size={16} className="text-emerald-600 flex-shrink-0" /> 
+                <span>Identifica ineficiencias y recupera horas de trabajo cada semana.</span>
+              </div>
+
+              <ul className="space-y-4 flex-grow mb-8">
                 <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Control de gestión ágil</li>
                 <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Acompañamiento en la transformación digital</li>
+                <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#575460]" size={20} /> Mejora de procesos</li>
               </ul>
+
+              <a 
+                href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-full text-center bg-[#272725] text-white py-3 rounded-xl font-bold hover:bg-[#575460] transition-colors"
+              >
+                Solicitar Propuesta
+              </a>
             </motion.div>
           </div>
         </section>
@@ -457,8 +523,9 @@ export default function App() {
         {/* BOTTOM CTA */}
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* OPTIMIZADO UX */}
             <div className="bg-white rounded-[3rem] p-12 md:p-20 text-center shadow-xl border border-gray-100">
-              <h2 className="font-primary text-4xl md:text-5xl font-bold mb-6 tracking-tight text-[#272725]">¿Lista/o para impulsar tu productividad?</h2>
+              <h2 className="font-primary text-4xl md:text-5xl font-bold mb-6 tracking-tight text-[#272725]">¿Tu equipo pierde horas en tareas que la IA ya puede resolver?</h2>
               <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Ya sea que necesites un dashboard personalizado, formar a tu equipo o rediseñar tus procesos corporativos, estamos aquí para ayudarte a escalar.
               </p>
@@ -491,14 +558,72 @@ export default function App() {
       </main>
 
       {/* FOOTER */}
-      <footer className="bg-[#f9f9fa] py-12 border-t border-gray-100 font-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="font-primary font-bold text-2xl tracking-tight text-[#272725] mb-4 block">
-            La <span className="text-[#575460]">Mentoría</span>
-          </span>
-          <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} Consultoría & Formación en Datos e IA. Todos los derechos reservados.
-          </p>
+      {/* OPTIMIZADO UX */}
+      <footer className="bg-[#f9f9fa] pt-16 pb-12 border-t border-gray-100 font-secondary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-gray-100 text-left">
+            {/* Columna 1: Brand / Info */}
+            <div className="space-y-4">
+              <span className="font-primary font-bold text-2xl tracking-tight text-[#272725] block">
+                La <span className="text-[#575460]">Mentoría</span>
+              </span>
+              <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
+                Consultoría & Formación en Datos e IA. Transformamos el potencial de tu negocio con tecnología y automatización con propósito.
+              </p>
+              <p className="text-gray-600 text-sm font-semibold">
+                Valencia, España · <a href="mailto:hola@lamentoria.info" className="hover:text-[#575460] transition-colors">hola@lamentoria.info</a>
+              </p>
+            </div>
+
+            {/* Columna 2: Navegación Rápida */}
+            <div className="space-y-4">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#272725]">Navegación</h4>
+              <ul className="space-y-2.5 text-sm">
+                <li>
+                  <a href="#equipo" className="text-gray-500 hover:text-[#272725] transition-colors">El Equipo</a>
+                </li>
+                <li>
+                  <a href="#servicios" className="text-gray-500 hover:text-[#272725] transition-colors">Servicios</a>
+                </li>
+                <li>
+                  <a href="#mentoria" className="text-gray-500 hover:text-[#272725] transition-colors">La Mentoría</a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Columna 3: Legal & Socials */}
+            <div className="space-y-4">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-[#272725]">Legal y Social</h4>
+              <ul className="space-y-2.5 text-sm mb-6">
+                <li>
+                  <a href="#" className="text-gray-500 hover:text-[#272725] transition-colors">Política de Privacidad</a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-500 hover:text-[#272725] transition-colors">Aviso Legal</a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-500 hover:text-[#272725] transition-colors">Política de Cookies</a>
+                </li>
+              </ul>
+              <div className="flex gap-4">
+                <a href="#" aria-label="LinkedIn" className="p-2 bg-white border border-gray-200 rounded-full text-gray-500 hover:text-[#272725] hover:border-gray-300 transition-all">
+                  <Linkedin size={18} />
+                </a>
+                <a href="#" aria-label="Instagram" className="p-2 bg-white border border-gray-200 rounded-full text-gray-500 hover:text-[#272725] hover:border-gray-300 transition-all">
+                  <Instagram size={18} />
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="pt-8 text-center md:flex md:justify-between md:items-center">
+            <p className="text-gray-400 text-xs">
+              © {new Date().getFullYear()} La Mentoría. Todos los derechos reservados.
+            </p>
+            <p className="text-gray-400 text-xs mt-2 md:mt-0">
+              Valencia, España · hola@lamentoria.info
+            </p>
+          </div>
         </div>
       </footer>
     </div>
