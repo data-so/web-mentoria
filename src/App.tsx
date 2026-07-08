@@ -287,7 +287,7 @@ export default function App() {
               >
                 <div className="w-20 h-20 rounded-full mb-6 overflow-hidden border-2 border-[#6C47FF]/20 shadow-inner flex-shrink-0">
                   <img 
-                    src="https://lh3.googleusercontent.com/d/1yXXUEVXF2X99RF6H2NFaebTXW3qpQgB1" 
+                    src="https://lh3.googleusercontent.com/d/1wQhCPhzmKmxtPDkSLNC53b3OHoaKR49d" 
                     referrerPolicy="no-referrer"
                     alt="Mariela Sanchez" 
                     className="w-full h-full object-cover" 
