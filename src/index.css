@@ -1,7 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Questrial&family=Open+Sans:wght@300;400;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-primary: "Questrial", sans-serif;
-  --font-secondary: "Open Sans", sans-serif;
+  --font-primary: "Inter", "Questrial", sans-serif;
+  --font-secondary: "Inter", "Open Sans", sans-serif;
+}
+
+/* Custom Base Styling */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Keyframes for Hero Floating Laptop/Dashboard */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Keyframes for Gradient Blobs */
+@keyframes blob-pivot-1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(40px, -40px) scale(1.15);
+  }
+  66% {
+    transform: translate(-30px, 20px) scale(0.9);
+  }
+}
+
+@keyframes blob-pivot-2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 40px) scale(1.2);
+  }
+}
+
+.animate-blob-1 {
+  animation: blob-pivot-1 15s infinite alternate ease-in-out;
+}
+
+.animate-blob-2 {
+  animation: blob-pivot-2 15s infinite alternate ease-in-out;
+}
+
+/* Underline SVG effect class */
+.decorative-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.decorative-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 8px;
+  background-color: #FFD166;
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0.8;
 }
