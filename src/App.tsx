@@ -481,7 +481,7 @@ export default function App() {
                 </div>
                 {/* DISEÑO DINÁMICO: CTA del curso con dorado */}
                 <a 
-                  href="https://pay.hotmart.com/G106034907Y" 
+                  href="https://pay.hotmart.com/G106198119J?bid=1783589240089" 
                   target="_blank" rel="noopener noreferrer"
                   className="w-full bg-[#FFD166] text-[#0F0F1A] py-4 rounded-xl font-bold text-center hover:bg-[#FFD166]/90 hover:scale-[1.03] transition-all shadow-md hover:shadow-lg"
                 >
@@ -506,7 +506,7 @@ export default function App() {
                 </div>
                 {/* DISEÑO DINÁMICO: CTA del curso con violeta */}
                 <a 
-                  href="https://pay.hotmart.com/G106198119J" 
+                  href="https://pay.hotmart.com/G106034907Y?bid=1783589237548" 
                   target="_blank" rel="noopener noreferrer"
                   className="w-full bg-[#6C47FF] text-white py-4 rounded-xl font-bold text-center hover:bg-[#6C47FF]/90 hover:scale-[1.03] transition-all shadow-md hover:shadow-lg"
                 >
@@ -531,7 +531,7 @@ export default function App() {
                 </div>
                 {/* DISEÑO DINÁMICO: CTA del curso con coral */}
                 <a 
-                  href="https://pay.hotmart.com/H106550489L" 
+                  href="https://pay.hotmart.com/H106550489L?bid=1783589243112" 
                   target="_blank" rel="noopener noreferrer"
                   className="w-full bg-[#FF6B6B] text-white py-4 rounded-xl font-bold text-center hover:bg-[#FF6B6B]/90 hover:scale-[1.03] transition-all shadow-md hover:shadow-lg"
                 >
@@ -682,13 +682,13 @@ export default function App() {
               <h4 className="text-xs font-bold uppercase tracking-wider text-white">Legal y Social</h4>
               <ul className="space-y-2.5 text-sm mb-6">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Privacidad</a>
+                  <a href="/politica-privacidad.html" className="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Privacidad</a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#6C47FF] transition-colors">Aviso Legal</a>
+                  <a href="/aviso-legal.html" className="text-gray-400 hover:text-[#6C47FF] transition-colors">Aviso Legal</a>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Cookies</a>
+                  <a href="/politica-cookies.html" className="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Cookies</a>
                 </li>
               </ul>
               <div className="flex gap-4">

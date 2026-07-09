@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Cookies — La Mentoría</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primario: '#6C47FF',
+              acento1: '#FF6B6B',
+              acento2: '#FFD166',
+              fondoOscuro: '#0F0F1A',
+              fondoClaro: '#F8F7FF',
+              textoPrincipal: '#1A1A2E',
+              footerFondo: '#0A0A12',
+              grises: '#9999AA'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              primary: ['Inter', 'sans-serif'],
+              secondary: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom styles for content readability */
+      .legal-content h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #6C47FF;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(108, 71, 255, 0.1);
+        padding-bottom: 0.5rem;
+      }
+      .legal-content p, .legal-content li {
+        color: #4A5568;
+        line-height: 1.75;
+        margin-bottom: 1rem;
+      }
+      .legal-content ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F8F7FF] text-[#1A1A2E] overflow-x-hidden font-secondary min-h-screen flex flex-col justify-between">
+    
+    <!-- NAVEGACIÓN (IDÉNTICO AL APP.TSX) -->
+    <nav class="sticky top-0 z-50 bg-[#F8F7FF]/90 backdrop-blur-md border-b border-[#6C47FF]/10 font-secondary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0 flex items-center gap-1 cursor-pointer">
+            <a href="/index.html" class="font-primary font-bold text-2xl tracking-tight text-[#1A1A2E]">
+              La <span class="text-[#6C47FF]">Mentoría</span>
+            </a>
+          </div>
+          
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8 items-center">
+            <a href="/index.html#equipo" class="text-sm font-semibold text-gray-500 hover:text-[#6C47FF] transition-colors">El Equipo</a>
+            <a href="/index.html#servicios" class="text-sm font-semibold text-gray-500 hover:text-[#6C47FF] transition-colors">Servicios</a>
+            <a href="/index.html#mentoria" class="text-sm font-semibold text-gray-500 hover:text-[#6C47FF] transition-colors">La Mentoría</a>
+            <a 
+              href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-6 py-2.5 rounded-full text-sm font-bold hover:scale-[1.03] hover:shadow-[0_8px_20px_rgba(108,71,255,0.3)] transition-all shadow-md"
+            >
+              Reservar Consultoría
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-500 hover:text-[#6C47FF] focus:outline-none p-2"
+              aria-label="Toggle Menu"
+            >
+              <i data-lucide="menu" id="menu-icon-burger" class="w-6 h-6"></i>
+              <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div 
+        id="mobile-menu"
+        class="hidden md:hidden border-b border-[#6C47FF]/10 bg-[#F8F7FF] px-4 pt-2 pb-6 space-y-3 shadow-lg"
+      >
+        <a 
+          href="/index.html#equipo" 
+          class="block px-3 py-2 rounded-lg text-base font-semibold text-gray-600 hover:bg-[#6C47FF]/10 hover:text-[#6C47FF] transition-colors"
+        >
+          El Equipo
+        </a>
+        <a 
+          href="/index.html#servicios" 
+          class="block px-3 py-2 rounded-lg text-base font-semibold text-gray-600 hover:bg-[#6C47FF]/10 hover:text-[#6C47FF] transition-colors"
+        >
+          Servicios
+        </a>
+        <a 
+          href="/index.html#mentoria" 
+          class="block px-3 py-2 rounded-lg text-base font-semibold text-gray-600 hover:bg-[#6C47FF]/10 hover:text-[#6C47FF] transition-colors"
+        >
+          La Mentoría
+        </a>
+        <div class="pt-2">
+          <a 
+            href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block w-full text-center bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-6 py-3 rounded-full text-sm font-bold shadow-md"
+          >
+            Reservar Consultoría
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN LEGAL CONTAINER -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      
+      <!-- DISEÑO DINÁMICO: Badge Legal y Título H1 -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-5 py-2 rounded-full text-xs font-bold tracking-wider uppercase shadow-md mb-6">
+          <i data-lucide="cookie" class="w-4 h-4 text-[#FFD166]"></i>
+          Documento Legal
+        </div>
+        <h1 class="font-primary text-4xl md:text-5xl font-extrabold tracking-tight text-[#1A1A2E] leading-tight mb-4">
+          Política de Cookies
+        </h1>
+        <p class="text-gray-500 text-sm max-w-xl mx-auto">
+          De conformidad con el artículo 22.2 de la LSSI-CE y tras la adaptación a las directrices de la Agencia Española de Protección de Datos (AEPD).
+        </p>
+      </div>
+
+      <!-- LEGAL CONTENT -->
+      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 legal-content">
+        <p class="font-medium text-[#1A1A2E] bg-[#F8F7FF] p-4 rounded-xl border-l-4 border-[#6C47FF] mb-8">
+          En La Mentoría utilizamos cookies y tecnologías similares con el objetivo de facilitar tu navegación, comprender cómo interactúas con nuestra web y optimizar la experiencia de usuario.
+        </p>
+
+        <h2>1. ¿Qué son las Cookies?</h2>
+        <p>Una cookie es un pequeño archivo de texto que se descarga y almacena en el terminal del usuario (ya sea un ordenador, smartphone, tableta o cualquier dispositivo conectado) al acceder a determinadas páginas web. Las cookies permiten a un sitio web, entre otras cosas, guardar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo, y según la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario.</p>
+
+        <h2>2. Tipos de Cookies que Utiliza esta Web</h2>
+        <p>A continuación, detallamos las cookies empleadas en este portal según su finalidad y su procedencia:</p>
+        
+        <div class="space-y-4 my-6">
+          <div class="p-5 bg-purple-50/50 rounded-2xl border border-purple-100">
+            <h3 class="font-bold text-[#6C47FF] mb-2 flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+              A) Cookies Técnicas o Esenciales
+            </h3>
+            <p class="text-sm text-gray-600 mb-0">
+              Son aquellas estrictamente necesarias para el correcto funcionamiento del portal. Permiten al usuario navegar por la página web, controlar el tráfico, identificar la sesión de usuario, realizar solicitudes de inscripción, y utilizar elementos de seguridad técnicos. <strong>Estas cookies no recopilan información personal alguna y no requieren el consentimiento explícito del usuario</strong> según el artículo 22.2 de la LSSI-CE.
+            </p>
+          </div>
+
+          <div class="p-5 bg-purple-50/50 rounded-2xl border border-purple-100">
+            <h3 class="font-bold text-[#6C47FF] mb-2 flex items-center gap-2">
+              <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+              B) Cookies de Analítica y Estadísticas
+            </h3>
+            <p class="text-sm text-gray-600 mb-0">
+              Son aquellas que, bien tratadas por nosotros o por terceros (principalmente <strong>Google Analytics</strong>), nos permiten cuantificar el número de visitantes del sitio y medir el comportamiento técnico agregado de los usuarios de forma anónima (por ejemplo, saber qué servicios despiertan mayor interés o qué páginas tienen mayor tiempo de permanencia). Nos sirven única y exclusivamente para aplicar mejoras funcionales al portal. Requieren tu consentimiento expreso mediante aviso o configuración.
+            </p>
+          </div>
+
+          <div class="p-5 bg-purple-50/50 rounded-2xl border border-purple-100">
+            <h3 class="font-bold text-[#6C47FF] mb-2 flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4"></i>
+              C) Cookies de Terceros (Servicios Integrados)
+            </h3>
+            <p class="text-sm text-gray-600 mb-0">
+              Esta web utiliza servicios de terceros para enriquecer tu experiencia. Concretamente:
+            </p>
+            <ul class="text-xs text-gray-500 mt-2 list-disc pl-5 space-y-1">
+              <li><strong>Google Calendar / Google Meet:</strong> Se descargan al interactuar o cargar el programador de reservas para gestionar las fechas y posibilitar la videoconferencia.</li>
+              <li><strong>Hotmart:</strong> Se asocian para recordar la procedencia o habilitar el carrito y widgets de compra cuando el usuario decide inscribirse en alguna formación oficial.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>3. Cómo Gestionar, Bloquear o Desactivar las Cookies</h2>
+        <p>Puedes restringir, bloquear o borrar las cookies descargadas desde nuestro sitio web (o cualquier otro) en cualquier momento, modificando la configuración de preferencias de tu navegador de internet. Las instrucciones para los navegadores más utilizados son las siguientes:</p>
+        <ul>
+          <li><strong>Google Chrome:</strong> Herramientas -> Configuración -> Privacidad y seguridad -> Cookies y otros datos de sitios. <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" class="text-[#6C47FF] hover:underline">Saber más</a>.</li>
+          <li><strong>Mozilla Firefox:</strong> Menú -> Ajustes -> Privacidad & Seguridad -> Historial (o Cookies y datos del sitio). <a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" target="_blank" rel="noopener noreferrer" class="text-[#6C47FF] hover:underline">Saber más</a>.</li>
+          <li><strong>Apple Safari (Mac):</strong> Preferencias -> Privacidad -> Cookies y datos de sitios web. <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener noreferrer" class="text-[#6C47FF] hover:underline">Saber más</a>.</li>
+          <li><strong>Microsoft Edge:</strong> Configuración -> Cookies y permisos del sitio -> Administrar y eliminar cookies y datos del sitio. <a href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener noreferrer" class="text-[#6C47FF] hover:underline">Saber más</a>.</li>
+        </ul>
+        <p class="text-sm italic text-gray-500">Tenga en cuenta que si decide bloquear de forma radical todas las cookies técnicas, algunas funcionalidades específicas o la fluidez en el envío de formularios podrían verse parcialmente afectadas.</p>
+
+        <h2>4. Aceptación de las Cookies e Consentimiento</h2>
+        <p>Al acceder por primera vez a este portal web, se te muestra un aviso de banner de cookies. Si continúas navegando por el sitio sin configurar o bloquear expresamente las cookies en tu navegador, estás manifestando tu conformidad con el uso de las cookies esenciales para fines técnicos y operativos obligatorios de la página.</p>
+        <p>Las cookies analíticas y de marketing de terceros solo se ejecutarán si las has aceptado de forma activa y explícita, o si has continuado interactuando de forma que demuestre tu conformidad clara de acuerdo con las directrices de la AEPD.</p>
+
+        <h2>5. Actualización de la Política de Cookies</h2>
+        <p>La Mentoría puede modificar o actualizar el contenido de esta Política de Cookies en función de nuevas exigencias legislativas, reglamentarias, o con el objeto de adaptar dicha política a las instrucciones dictadas por la Agencia Española de Protección de Datos.</p>
+        <p>Por ello, se aconseja al usuario que visite periódicamente esta sección legal para estar adecuadamente informado sobre cómo y para qué utilizamos las cookies.</p>
+      </div>
+
+      <!-- RETORNAR BOTÓN -->
+      <div class="text-center mt-12">
+        <a 
+          href="/index.html" 
+          class="inline-flex items-center gap-2 bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-8 py-3.5 rounded-full font-bold shadow-md hover:scale-[1.03] hover:shadow-[0_8px_20px_rgba(108,71,255,0.3)] transition-all"
+        >
+          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+          Volver a la Página Principal
+        </a>
+      </div>
+    </main>
+
+    <!-- FOOTER (IDÉNTICO AL APP.TSX) -->
+    <footer class="bg-[#0A0A12] pt-1 pb-12 font-secondary text-[#9999AA] relative mt-16">
+      
+      <!-- Línea separadora con degradado -->
+      <div class="h-1 bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] w-full mb-16"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/5 text-left">
+          
+          <!-- Columna 1: Brand / Info -->
+          <div class="space-y-4">
+            <span class="font-primary font-bold text-2xl tracking-tight text-white block">
+              La <span class="text-[#6C47FF]">Mentoría</span>
+            </span>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+              Consultoría & Formación en Datos e IA. Transformamos el potencial de tu negocio con tecnología y automatización con propósito.
+            </p>
+            <p class="text-gray-300 text-sm font-semibold">
+              Valencia, España · <a href="mailto:hola@lamentoria.info" class="hover:text-[#6C47FF] transition-colors">hola@lamentoria.info</a>
+            </p>
+          </div>
+
+          <!-- Columna 2: Navegación Rápida -->
+          <div class="space-y-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Navegación</h4>
+            <ul class="space-y-2.5 text-sm">
+              <li>
+                <a href="/index.html#equipo" class="text-gray-400 hover:text-[#6C47FF] transition-colors">El Equipo</a>
+              </li>
+              <li>
+                <a href="/index.html#servicios" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Servicios</a>
+              </li>
+              <li>
+                <a href="/index.html#mentoria" class="text-gray-400 hover:text-[#6C47FF] transition-colors">La Mentoría</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Legal & Socials -->
+          <div class="space-y-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Legal y Social</h4>
+            <ul class="space-y-2.5 text-sm mb-6">
+              <li>
+                <a href="/politica-privacidad.html" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Privacidad</a>
+              </li>
+              <li>
+                <a href="/aviso-legal.html" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Aviso Legal</a>
+              </li>
+              <li>
+                <a href="/politica-cookies.html" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Cookies</a>
+              </li>
+            </ul>
+            <div class="flex gap-4">
+              <a href="https://www.linkedin.com/in/sofiaaguirree/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="p-2.5 bg-white/5 border border-white/10 rounded-full text-gray-400 hover:text-white hover:bg-[#6C47FF] hover:border-[#6C47FF] transition-all">
+                <i data-lucide="linkedin" class="w-4.5 h-4.5"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="p-2.5 bg-white/5 border border-white/10 rounded-full text-gray-400 hover:text-white hover:bg-[#FF6B6B] hover:border-[#FF6B6B] transition-all">
+                <i data-lucide="instagram" class="w-4.5 h-4.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pt-8 text-center md:flex md:justify-between md:items-center">
+          <p class="text-gray-500 text-xs">
+            © <span id="current-year">2026</span> La Mentoría. Todos los derechos reservados.
+          </p>
+          <p class="text-gray-500 text-xs mt-2 md:mt-0">
+            Valencia, España · hola@lamentoria.info
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts to drive layout interactions and initialize icons -->
+    <script>
+      // Initialize Lucide Icons
+      lucide.createIcons();
+
+      // Dynamic year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      // Mobile Menu Actions
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconBurger = document.getElementById('menu-icon-burger');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        iconBurger.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

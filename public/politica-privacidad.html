@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidad — La Mentoría</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primario: '#6C47FF',
+              acento1: '#FF6B6B',
+              acento2: '#FFD166',
+              fondoOscuro: '#0F0F1A',
+              fondoClaro: '#F8F7FF',
+              textoPrincipal: '#1A1A2E',
+              footerFondo: '#0A0A12',
+              grises: '#9999AA'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              primary: ['Inter', 'sans-serif'],
+              secondary: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom styles for content readability */
+      .legal-content h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #6C47FF;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid rgba(108, 71, 255, 0.1);
+        padding-bottom: 0.5rem;
+      }
+      .legal-content p, .legal-content li {
+        color: #4A5568;
+        line-height: 1.75;
+        margin-bottom: 1rem;
+      }
+      .legal-content ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F8F7FF] text-[#1A1A2E] overflow-x-hidden font-secondary min-h-screen flex flex-col justify-between">
+    
+    <!-- NAVEGACIÓN (IDÉNTICO AL APP.TSX) -->
+    <nav class="sticky top-0 z-50 bg-[#F8F7FF]/90 backdrop-blur-md border-b border-[#6C47FF]/10 font-secondary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0 flex items-center gap-1 cursor-pointer">
+            <a href="/index.html" class="font-primary font-bold text-2xl tracking-tight text-[#1A1A2E]">
+              La <span class="text-[#6C47FF]">Mentoría</span>
+            </a>
+          </div>
+          
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8 items-center">
+            <a href="/index.html#equipo" class="text-sm font-semibold text-gray-500 hover:text-[#6C47FF] transition-colors">El Equipo</a>
+            <a href="/index.html#servicios" class="text-sm font-semibold text-gray-500 hover:text-[#6C47FF] transition-colors">Servicios</a>
+            <a href="/index.html#mentoria" class="text-sm font-semibold text-gray-500 hover:text-[#6C47FF] transition-colors">La Mentoría</a>
+            <a 
+              href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-6 py-2.5 rounded-full text-sm font-bold hover:scale-[1.03] hover:shadow-[0_8px_20px_rgba(108,71,255,0.3)] transition-all shadow-md"
+            >
+              Reservar Consultoría
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-500 hover:text-[#6C47FF] focus:outline-none p-2"
+              aria-label="Toggle Menu"
+            >
+              <i data-lucide="menu" id="menu-icon-burger" class="w-6 h-6"></i>
+              <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div 
+        id="mobile-menu"
+        class="hidden md:hidden border-b border-[#6C47FF]/10 bg-[#F8F7FF] px-4 pt-2 pb-6 space-y-3 shadow-lg"
+      >
+        <a 
+          href="/index.html#equipo" 
+          class="block px-3 py-2 rounded-lg text-base font-semibold text-gray-600 hover:bg-[#6C47FF]/10 hover:text-[#6C47FF] transition-colors"
+        >
+          El Equipo
+        </a>
+        <a 
+          href="/index.html#servicios" 
+          class="block px-3 py-2 rounded-lg text-base font-semibold text-gray-600 hover:bg-[#6C47FF]/10 hover:text-[#6C47FF] transition-colors"
+        >
+          Servicios
+        </a>
+        <a 
+          href="/index.html#mentoria" 
+          class="block px-3 py-2 rounded-lg text-base font-semibold text-gray-600 hover:bg-[#6C47FF]/10 hover:text-[#6C47FF] transition-colors"
+        >
+          La Mentoría
+        </a>
+        <div class="pt-2">
+          <a 
+            href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block w-full text-center bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-6 py-3 rounded-full text-sm font-bold shadow-md"
+          >
+            Reservar Consultoría
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN LEGAL CONTAINER -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      
+      <!-- DISEÑO DINÁMICO: Badge Legal y Título H1 -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-5 py-2 rounded-full text-xs font-bold tracking-wider uppercase shadow-md mb-6">
+          <i data-lucide="shield-check" class="w-4 h-4 text-[#FFD166]"></i>
+          Documento Legal
+        </div>
+        <h1 class="font-primary text-4xl md:text-5xl font-extrabold tracking-tight text-[#1A1A2E] leading-tight mb-4">
+          Política de Privacidad
+        </h1>
+        <p class="text-gray-500 text-sm max-w-xl mx-auto">
+          Última actualización: Julio de 2026. De conformidad con el RGPD (UE) 2016/679 y la legislación española aplicable.
+        </p>
+      </div>
+
+      <!-- LEGAL CONTENT -->
+      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100 legal-content">
+        <p class="font-medium text-[#1A1A2E] bg-[#F8F7FF] p-4 rounded-xl border-l-4 border-[#6C47FF] mb-8">
+          En La Mentoría nos tomamos muy en serio la privacidad y la protección de los datos de nuestros usuarios. A continuación, detallamos de forma transparente cómo recopilamos, tratamos y protegemos tus datos personales.
+        </p>
+
+        <h2>1. Responsable del Tratamiento de sus Datos</h2>
+        <p>De conformidad con el Reglamento General de Protección de Datos (RGPD UE 2016/679) y la Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales, te informamos de que el responsable del tratamiento de los datos es:</p>
+        <ul>
+          <li><strong>Titular:</strong> María Sofía Aguirre</li>
+          <li><strong>NIF:</strong> 61265383F</li>
+          <li><strong>Domicilio social:</strong> Valencia, España</li>
+          <li><strong>Email de contacto:</strong> <a href="mailto:hola@lamentoria.info" class="text-[#6C47FF] font-semibold hover:underline">hola@lamentoria.info</a></li>
+          <li><strong>Sitio Web:</strong> <a href="https://lamentoria.info" target="_blank" rel="noopener noreferrer" class="text-[#6C47FF] font-semibold hover:underline">https://lamentoria.info</a></li>
+          <li><strong>Actividad principal:</strong> Consultoría y Formación en Inteligencia Artificial y Datos</li>
+        </ul>
+
+        <h2>2. Finalidad del Tratamiento de los Datos</h2>
+        <p>Recopilamos y tratamos tus datos personales exclusivamente para los siguientes propósitos, dependiendo de la interacción que mantengas con nuestro sitio web:</p>
+        <ul>
+          <li><strong>Gestión de consultas y solicitudes:</strong> Tratamos los datos que nos facilitas a través de correos electrónicos, llamadas o formularios de contacto para responder a tus consultas, presupuestos o solicitudes de información sobre nuestros servicios de consultoría o formación.</li>
+          <li><strong>Gestión de reservas de sesiones y consultorías (Google Calendar):</strong> Cuando utilizas el enlace para agendar una sesión 1:1, los datos son recopilados a través de la herramienta integrada Google Calendar para gestionar la fecha, hora, enlaces de videoconferencia (Google Meet) y recordatorios pertinentes de tu sesión.</li>
+          <li><strong>Proceso de venta y gestión de cursos online (Hotmart):</strong> Al adquirir cualquiera de las formaciones comercializadas en este sitio, el procesamiento del cobro, facturación y suministro de la formación se realiza mediante la plataforma <strong>Hotmart</strong>. Hotmart actúa como encargado del tratamiento, aplicando sus propios estándares estrictos de protección de datos.</li>
+          <li><strong>Envío de comunicaciones comerciales:</strong> Siempre que nos des tu consentimiento expreso y libre mediante casillas de verificación (opt-in) o suscripción específica, utilizaremos tus datos para enviarte boletines informativos, actualizaciones de nuestros cursos o guías, y ofertas exclusivas de La Mentoría. Puedes revocar este consentimiento en cualquier momento.</li>
+          <li><strong>Mantenimiento técnico y analítica web:</strong> Utilizamos cookies para asegurar el correcto funcionamiento técnico del sitio y para analizar el comportamiento agregado de los usuarios a través de Google Analytics, con el fin de optimizar el diseño y la experiencia de usuario.</li>
+        </ul>
+
+        <h2>3. Base Jurídica del Tratamiento</h2>
+        <p>El tratamiento de tus datos personales se legitima sobre las siguientes bases jurídicas:</p>
+        <ul>
+          <li><strong>Consentimiento del interesado (Art. 6.1.a RGPD):</strong> Para responder a tus consultas y enviar comunicaciones comerciales. Al enviarnos un mensaje o marcar la aceptación de las comunicaciones, consientes este tratamiento.</li>
+          <li><strong>Ejecución de un contrato o medidas precontractuales (Art. 6.1.b RGPD):</strong> Requerido para procesar el agendamiento de consultorías (Google Calendar) y la adquisición y acceso a los cursos online (Hotmart).</li>
+          <li><strong>Interés legítimo del responsable (Art. 6.1.f RGPD):</strong> Para garantizar la seguridad del sitio web, prevenir fraudes, y asegurar una gestión técnica óptima de nuestra actividad comercial.</li>
+        </ul>
+
+        <h2>4. Destinatarios y Proveedores de Servicios</h2>
+        <p>Para desarrollar adecuadamente nuestra actividad y ofrecerte un servicio de alta calidad, compartimos tus datos con los siguientes proveedores externos bajo las garantías correspondientes de confidencialidad y contratos de encargo de tratamiento:</p>
+        <ul>
+          <li><strong>Plataforma de Cursos (Hotmart):</strong> Hotmart procesa tus transacciones financieras, emite comprobantes de pago y aloja las formaciones. Puedes consultar su correspondiente política en su web oficial.</li>
+          <li><strong>Servicios de Calendario y Reuniones (Google LLC):</strong> Google Calendar y Google Meet se utilizan para el agendamiento y desarrollo de las mentorías y consultorías.</li>
+          <li><strong>Proveedor de Hosting:</strong> Los servidores donde se aloja este sitio web aplican medidas de seguridad técnicas avanzadas para salvaguardar la información recopilada.</li>
+          <li><strong>Herramientas de Analítica (Google Analytics):</strong> De forma agregada e impersonalizada, se registran visitas a efectos puramente estadísticos.</li>
+        </ul>
+
+        <h2>5. Transferencias Internacionales de Datos</h2>
+        <p>Algunos de nuestros proveedores, como Hotmart (con infraestructuras globales y sede matriz en Brasil) o Google LLC (sede en EE. UU.), operan fuera del Espacio Económico Europeo (EEE). Estas transferencias internacionales se realizan bajo las máximas garantías de seguridad legal, como son la adhesión al marco del Marco de Privacidad de Datos (Data Privacy Framework), decisiones de adecuación de la Comisión Europea o mediante la firma de Cláusulas Contractuales Tipo aprobadas por las autoridades de control europeas.</p>
+
+        <h2>6. Plazo de Conservación de los Datos</h2>
+        <p>Conservaremos tus datos personales únicamente durante el tiempo estrictamente necesario para cumplir con las finalidades para las que fueron recabados, o mientras no revoques tu consentimiento o solicites su supresión. No obstante, mantendremos los datos debidamente bloqueados durante los plazos de prescripción legalmente exigibles para hacer frente a posibles responsabilidades administrativas, mercantiles o tributarias.</p>
+
+        <h2>7. Derechos de los Usuarios</h2>
+        <p>Como titular de los datos personales, tienes garantizados por ley los siguientes derechos de control y protección:</p>
+        <ul>
+          <li><strong>Acceso:</strong> Derecho a saber si estamos tratando tus datos y qué información exacta disponemos de ti.</li>
+          <li><strong>Rectificación:</strong> Derecho a corregir datos inexactos, obsoletos o incompletos.</li>
+          <li><strong>Supresión ("Derecho al olvido"):</strong> Derecho a solicitar la eliminación definitiva de tus datos cuando, entre otros motivos, ya no sean necesarios para los fines por los cuales se obtuvieron.</li>
+          <li><strong>Oposición:</strong> Derecho a oponerte a que tratemos tus datos para finalidades específicas (por ejemplo, marketing directo).</li>
+          <li><strong>Limitación del Tratamiento:</strong> Derecho a solicitar que detengamos temporalmente el tratamiento de tus datos en circunstancias legalmente previstas.</li>
+          <li><strong>Portabilidad:</strong> Derecho a recibir tus datos en un formato estructurado y de lectura electrónica común, o a que los transmitamos directamente a otro proveedor.</li>
+        </ul>
+
+        <h2>8. Cómo Ejercer sus Derechos</h2>
+        <p>Puedes ejercer cualquiera de estos derechos enviando una solicitud formal por escrito acompañada de una copia de tu documento de identidad (DNI o equivalente) a efectos de verificación al siguiente correo electrónico:</p>
+        <p class="text-center font-bold text-[#6C47FF] bg-[#F8F7FF] py-3 rounded-xl border border-[#6C47FF]/20 my-4">
+          <i data-lucide="mail" class="inline-block mr-2 w-4 h-4 align-middle"></i>hola@lamentoria.info
+        </p>
+        <p>La atención de su derecho será totalmente gratuita y será respondida en un plazo máximo de un mes desde la fecha de recepción de la solicitud.</p>
+
+        <h2>9. Derecho a Reclamar ante la Autoridad de Control</h2>
+        <p>Si consideras que el tratamiento de tus datos personales infringe la normativa europea o estatal vigente en materia de protección de datos, tienes pleno derecho a interponer una reclamación formal ante la autoridad de control estatal competente en España:</p>
+        <ul>
+          <li><strong>Agencia Española de Protección de Datos (AEPD)</strong></li>
+          <li>Dirección: Calle Jorge Juan, 6, 28001 - Madrid</li>
+          <li>Sitio Web: <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" class="text-[#6C47FF] hover:underline">www.aepd.es</a></li>
+        </ul>
+      </div>
+
+      <!-- RETORNAR BOTÓN -->
+      <div class="text-center mt-12">
+        <a 
+          href="/index.html" 
+          class="inline-flex items-center gap-2 bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-8 py-3.5 rounded-full font-bold shadow-md hover:scale-[1.03] hover:shadow-[0_8px_20px_rgba(108,71,255,0.3)] transition-all"
+        >
+          <i data-lucide="arrow-left" class="w-5 h-5"></i>
+          Volver a la Página Principal
+        </a>
+      </div>
+    </main>
+
+    <!-- FOOTER (IDÉNTICO AL APP.TSX) -->
+    <footer class="bg-[#0A0A12] pt-1 pb-12 font-secondary text-[#9999AA] relative mt-16">
+      
+      <!-- Línea separadora con degradado -->
+      <div class="h-1 bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] w-full mb-16"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/5 text-left">
+          
+          <!-- Columna 1: Brand / Info -->
+          <div class="space-y-4">
+            <span class="font-primary font-bold text-2xl tracking-tight text-white block">
+              La <span class="text-[#6C47FF]">Mentoría</span>
+            </span>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+              Consultoría & Formación en Datos e IA. Transformamos el potencial de tu negocio con tecnología y automatización con propósito.
+            </p>
+            <p class="text-gray-300 text-sm font-semibold">
+              Valencia, España · <a href="mailto:hola@lamentoria.info" class="hover:text-[#6C47FF] transition-colors">hola@lamentoria.info</a>
+            </p>
+          </div>
+
+          <!-- Columna 2: Navegación Rápida -->
+          <div class="space-y-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Navegación</h4>
+            <ul class="space-y-2.5 text-sm">
+              <li>
+                <a href="/index.html#equipo" class="text-gray-400 hover:text-[#6C47FF] transition-colors">El Equipo</a>
+              </li>
+              <li>
+                <a href="/index.html#servicios" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Servicios</a>
+              </li>
+              <li>
+                <a href="/index.html#mentoria" class="text-gray-400 hover:text-[#6C47FF] transition-colors">La Mentoría</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Legal & Socials -->
+          <div class="space-y-4">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-white">Legal y Social</h4>
+            <ul class="space-y-2.5 text-sm mb-6">
+              <li>
+                <a href="/politica-privacidad.html" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Privacidad</a>
+              </li>
+              <li>
+                <a href="/aviso-legal.html" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Aviso Legal</a>
+              </li>
+              <li>
+                <a href="/politica-cookies.html" class="text-gray-400 hover:text-[#6C47FF] transition-colors">Política de Cookies</a>
+              </li>
+            </ul>
+            <div class="flex gap-4">
+              <a href="https://www.linkedin.com/in/sofiaaguirree/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="p-2.5 bg-white/5 border border-white/10 rounded-full text-gray-400 hover:text-white hover:bg-[#6C47FF] hover:border-[#6C47FF] transition-all">
+                <i data-lucide="linkedin" class="w-4.5 h-4.5"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="p-2.5 bg-white/5 border border-white/10 rounded-full text-gray-400 hover:text-white hover:bg-[#FF6B6B] hover:border-[#FF6B6B] transition-all">
+                <i data-lucide="instagram" class="w-4.5 h-4.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pt-8 text-center md:flex md:justify-between md:items-center">
+          <p class="text-gray-500 text-xs">
+            © <span id="current-year">2026</span> La Mentoría. Todos los derechos reservados.
+          </p>
+          <p class="text-gray-500 text-xs mt-2 md:mt-0">
+            Valencia, España · hola@lamentoria.info
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts to drive layout interactions and initialize icons -->
+    <script>
+      // Initialize Lucide Icons
+      lucide.createIcons();
+
+      // Dynamic year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      // Mobile Menu Actions
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconBurger = document.getElementById('menu-icon-burger');
+      const iconClose = document.getElementById('menu-icon-close');
+
+      mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        iconBurger.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
