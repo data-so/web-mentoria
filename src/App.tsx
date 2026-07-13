@@ -294,7 +294,7 @@ export default function App() {
                   />
                 </div>
                 <h3 className="font-primary text-xl font-bold mb-2 text-white">Mariela Sanchez</h3>
-                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">Experta en Datos y Analytics. Ha liderado transformaciones digitales en +30 empresas.</p>
+                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">Experta en Datos y Analytics. Más de 20 años transformando datos en decisiones estratégicas.</p>
                 {/* DISEÑO DINÁMICO: Botones de LinkedIn con brillo */}
                 <a 
                   href="https://www.linkedin.com/in/lmsdatos/" 
