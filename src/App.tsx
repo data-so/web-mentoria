@@ -630,7 +630,7 @@ export default function App() {
               >
                 <div>
                   <div className="text-5xl md:text-6xl font-black bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] bg-clip-text text-transparent mb-4">
-                    +93
+                    +600
                   </div>
                   <h3 className="font-primary text-xl font-bold text-[#1A1A2E] mb-3">
                     Profesionales Formados
