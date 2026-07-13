@@ -12,7 +12,10 @@ import {
   Zap,
   BookOpen,
   Menu,
-  X
+  X,
+  Users,
+  Sparkles,
+  Quote
 } from 'lucide-react';
 import { motion } from 'motion/react';
 
@@ -588,6 +591,341 @@ export default function App() {
                   Descargar Guía
                 </a>
               </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* SECCIÓN TESTIMONIOS Y IMPACTO */}
+        <section id="testimonios" className="py-24 bg-[#F8F7FF] border-t border-[#6C47FF]/10 relative overflow-hidden">
+          {/* Decorative background gradients */}
+          <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-gradient-to-tr from-[#6C47FF]/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+          <div className="absolute bottom-1/4 right-1/10 w-96 h-96 bg-gradient-to-bl from-[#FF6B6B]/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            {/* Introducción / Micro-copy de la Agencia */}
+            <div className="text-center mb-20">
+              <span className="inline-flex items-center gap-2 bg-[#6C47FF]/10 text-[#6C47FF] px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+                <Sparkles size={12} className="text-[#6C47FF]" /> IMPACTO COMPROBADO
+              </span>
+              <h2 className="font-primary text-3xl md:text-5xl font-extrabold text-[#1A1A2E] tracking-tight mb-6 leading-tight">
+                El Impacto Real de Nuestra Formación y Consultoría
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Resultados contrastados y testimonios de profesionales que ya han transformado su operativa diaria con Datos e Inteligencia Artificial.
+              </p>
+            </div>
+
+            {/* BLOQUE 1: Las Métricas del Impacto Real */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+              
+              {/* Métrica 1 */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-5xl md:text-6xl font-black bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] bg-clip-text text-transparent mb-4">
+                    +93
+                  </div>
+                  <h3 className="font-primary text-xl font-bold text-[#1A1A2E] mb-3">
+                    Profesionales Formados
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    Evaluaciones auditadas en entornos corporativos de alta exigencia (Caso Iberostar).
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Métrica 2 */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-5xl md:text-6xl font-black bg-gradient-to-r from-[#6C47FF] to-[#FFD166] bg-clip-text text-transparent mb-4">
+                    4.71 / 5
+                  </div>
+                  <h3 className="font-primary text-xl font-bold text-[#1A1A2E] mb-3">
+                    Satisfacción Global
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    Nota media otorgada por los equipos en la experiencia del programa.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Métrica 3 */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 text-center flex flex-col justify-between"
+              >
+                <div>
+                  <div className="text-5xl md:text-6xl font-black bg-gradient-to-r from-[#FF6B6B] to-[#FFD166] bg-clip-text text-transparent mb-4">
+                    9.28 / 10
+                  </div>
+                  <h3 className="font-primary text-xl font-bold text-[#1A1A2E] mb-3">
+                    Grado de Recomendación
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    La puntuación media con la que los alumnos recomiendan esta formación a otros compañeros.
+                  </p>
+                </div>
+              </motion.div>
+
+            </div>
+
+            {/* BLOQUE 2: La Cuadrícula de Testimonios (Clasificados por Solución) */}
+            <div className="mb-24">
+              <div className="text-center mb-12">
+                <span className="text-xs font-bold uppercase tracking-wider text-gray-400 block mb-2">OPINIONES DE ALUMNOS</span>
+                <h3 className="font-primary text-2xl md:text-3xl font-extrabold text-[#1A1A2E] tracking-tight">
+                  Casos de Éxito Clasificados por Solución
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                
+                {/* Eje 1: Automatización y Productividad */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="p-2 bg-[#6C47FF]/10 text-[#6C47FF] rounded-lg">
+                      <Zap size={18} />
+                    </div>
+                    <h4 className="font-primary text-md font-bold text-[#1A1A2E]">
+                      Automatización y Productividad
+                    </h4>
+                  </div>
+                  <p className="text-xs text-gray-500 mb-4">(Google Sheets + Apps Script)</p>
+
+                  {/* Testimonio 1 */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="flex text-[#FFD166] gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
+                    </div>
+                    <p className="text-[#4A5568] text-sm italic leading-relaxed mb-4">
+                      "Buscaba este curso para poder 'entender' cómo empezar a usar la IA en mi día a día y tener ejemplos de uso reales. Todo en realidad funciona como una excelente palanca de mejora en el trabajo diario. Me ha encantado."
+                    </p>
+                    <div className="text-xs font-bold text-[#1A1A2E] border-t border-gray-50 pt-3">
+                      — Alumno de Formación In-Company (Iberostar)
+                    </div>
+                  </motion.div>
+
+                  {/* Testimonio 2 */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="flex text-[#FFD166] gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
+                    </div>
+                    <p className="text-[#4A5568] text-sm italic leading-relaxed mb-4">
+                      "Me sirvió muchísimo la combinación de Apps Script + Gemini, y también el diseño de tablas dinámicas para enseñarle al equipo de jefaturas. Hará mi trabajo mucho más práctico."
+                    </p>
+                    <div className="text-xs font-bold text-[#1A1A2E] border-t border-gray-50 pt-3">
+                      — Responsable de Equipo Corporativo
+                    </div>
+                  </motion.div>
+
+                  {/* Testimonio 3 */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="flex text-[#FFD166] gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
+                    </div>
+                    <p className="text-[#4A5568] text-sm italic leading-relaxed mb-4">
+                      "La IA aplicada a fórmulas e importaciones de tablas nos ayuda muchísimo a agilizar las tareas. Te enseña a interactuar con Gemini y el código para no depender de otros."
+                    </p>
+                    <div className="text-xs font-bold text-[#1A1A2E] border-t border-gray-50 pt-3">
+                      — Área de Operaciones y Reportes
+                    </div>
+                  </motion.div>
+                </div>
+
+                {/* Eje 2: Estructura de Información */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="p-2 bg-[#6C47FF]/10 text-[#6C47FF] rounded-lg">
+                      <BrainCircuit size={18} />
+                    </div>
+                    <h4 className="font-primary text-md font-bold text-[#1A1A2E]">
+                      Estructura de Información y Gestión
+                    </h4>
+                  </div>
+                  <p className="text-xs text-gray-500 mb-4">(NotebookLM + Segundos Cerebros)</p>
+
+                  {/* Testimonio 4 */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="flex text-[#FFD166] gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
+                    </div>
+                    <p className="text-[#4A5568] text-sm italic leading-relaxed mb-4">
+                      "NotebookLM me ha servido para entender una nueva forma de trabajar con la información de la empresa. El poder generar los cuadernos inteligentes te cambia la estructura mental."
+                    </p>
+                    <div className="text-xs font-bold text-[#1A1A2E] border-t border-gray-50 pt-3">
+                      — Mando Intermedio
+                    </div>
+                  </motion.div>
+
+                  {/* Testimonio 5 */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="flex text-[#FFD166] gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
+                    </div>
+                    <p className="text-[#4A5568] text-sm italic leading-relaxed mb-4">
+                      "El conocimiento de las herramientas de Gemini, el uso de los GPTs/Gems personalizados para orientar las consultas y la integración con NotebookLM es lo que más me ha servido."
+                    </p>
+                    <div className="text-xs font-bold text-[#1A1A2E] border-t border-gray-50 pt-3">
+                      — Alumno de Mentoría Personalizada
+                    </div>
+                  </motion.div>
+                </div>
+
+                {/* Eje 3: Presentaciones de Alto Impacto */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="p-2 bg-[#6C47FF]/10 text-[#6C47FF] rounded-lg">
+                      <BarChart3 size={18} />
+                    </div>
+                    <h4 className="font-primary text-md font-bold text-[#1A1A2E]">
+                      Presentaciones de Alto Impacto
+                    </h4>
+                  </div>
+                  <p className="text-xs text-gray-500 mb-4">(Google Slides + Canvas)</p>
+
+                  {/* Testimonio 6 */}
+                  <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="flex text-[#FFD166] gap-1 mb-3">
+                      {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}
+                    </div>
+                    <p className="text-[#4A5568] text-sm italic leading-relaxed mb-4">
+                      "Me gustó mucho la parte en la que usamos la IA para crear presentaciones a partir de archivos PDF, crear vídeos explicativos y generar estructuras comerciales combinando posibilidades para diseñar diapositivas mucho mejores."
+                    </p>
+                    <div className="text-xs font-bold text-[#1A1A2E] border-t border-gray-50 pt-3">
+                      — Profesional Independiente
+                    </div>
+                  </motion.div>
+                </div>
+
+              </div>
+            </div>
+
+            {/* BLOQUE 3: Testimonios Directos sobre la Pedagogía (Tu Autoridad) */}
+            <div className="mb-16">
+              <div className="text-center mb-12">
+                <span className="text-xs font-bold uppercase tracking-wider text-gray-400 block mb-2">NUESTRA PEDAGOGÍA</span>
+                <h3 className="font-primary text-2xl md:text-3xl font-extrabold text-[#1A1A2E] tracking-tight">
+                  Formación Práctica, Cercana y sin Complicaciones
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                {/* Pedagogía 1 */}
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-white to-[#F8F7FF] rounded-3xl p-8 border border-purple-100/50 relative shadow-sm"
+                >
+                  <Quote className="absolute right-6 top-6 text-[#6C47FF]/10 w-12 h-12 pointer-events-none" />
+                  <p className="text-[#1A1A2E] font-medium text-base leading-relaxed mb-6 italic relative z-10">
+                    "Enseña muy bien, con buena pedagogía y va directo a los contenidos útiles."
+                  </p>
+                  <div className="text-xs font-extrabold text-gray-500 uppercase tracking-wider">
+                    — Evaluación Global de Talleres de Mayo
+                  </div>
+                </motion.div>
+
+                {/* Pedagogía 2 */}
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-white to-[#F8F7FF] rounded-3xl p-8 border border-purple-100/50 relative shadow-sm"
+                >
+                  <Quote className="absolute right-6 top-6 text-[#6C47FF]/10 w-12 h-12 pointer-events-none" />
+                  <p className="text-[#1A1A2E] font-medium text-base leading-relaxed mb-6 italic relative z-10">
+                    "La formadora es genial, tiene mucha paciencia y un conocimiento absoluto del tema. Explica cada asunto con ejercicios prácticos en tiempo real."
+                  </p>
+                  <div className="text-xs font-extrabold text-gray-500 uppercase tracking-wider">
+                    — Comentario de Alumno Senior
+                  </div>
+                </motion.div>
+
+                {/* Pedagogía 3 */}
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-white to-[#F8F7FF] rounded-3xl p-8 border border-purple-100/50 relative shadow-sm"
+                >
+                  <Quote className="absolute right-6 top-6 text-[#6C47FF]/10 w-12 h-12 pointer-events-none" />
+                  <p className="text-[#1A1A2E] font-medium text-base leading-relaxed mb-6 italic relative z-10">
+                    "Explicaciones con claridad y sin prisas, resolviendo todas las dudas del equipo y dando espacio para la prueba y error."
+                  </p>
+                  <div className="text-xs font-extrabold text-gray-500 uppercase tracking-wider">
+                    — Feedback de Desarrollo de Equipos
+                  </div>
+                </motion.div>
+
+              </div>
+            </div>
+
+            {/* CTA Final de Testimonios */}
+            <div className="text-center mt-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <a 
+                  href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#6C47FF] to-[#FF6B6B] text-white px-8 py-5 rounded-full font-bold text-base md:text-lg hover:scale-[1.03] hover:shadow-[0_12px_25px_rgba(108,71,255,0.4)] transition-all shadow-md text-center max-w-full"
+                >
+                  <Sparkles size={18} className="text-[#FFD166]" />
+                  Quiero que mi equipo consiga estos resultados - Agendar Consultoría Gratuita
+                </a>
+              </motion.div>
             </div>
 
           </div>
