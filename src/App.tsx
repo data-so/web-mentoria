@@ -114,9 +114,16 @@ export default function App() {
             <a 
               href="#mentoria" 
               onClick={() => setMobileMenuOpen(false)}
-              className="block px-3 py-2 rounded-lg text-base font-semibold text-gray-600 hover:bg-[#6C47FF]/10 hover:text-[#6C47FF] transition-colors"
+              className="flex items-center justify-between px-3 py-2.5 rounded-lg text-base font-bold text-[#6C47FF] bg-[#6C47FF]/10 border border-[#6C47FF]/20 shadow-[0_4px_12px_rgba(108,71,255,0.08)] hover:bg-[#6C47FF]/15 transition-all"
             >
-              La Mentoría
+              <span className="flex items-center gap-2">
+                <Sparkles size={18} className="text-[#FF6B6B] animate-pulse" />
+                La Mentoría
+              </span>
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF6B6B] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#FF6B6B]"></span>
+              </span>
             </a>
             <div className="pt-2">
               <a 
@@ -202,253 +209,6 @@ export default function App() {
                   loading="eager"
                 />
               </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* EL EQUIPO - FONDO OSCURO */}
-        {/* DISEÑO DINÁMICO: Fondo oscuro #0F0F1A */}
-        <section id="equipo" className="py-24 bg-[#0F0F1A] border-y border-white/5 relative">
-          
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="font-primary text-3xl md:text-5xl font-extrabold mb-6 text-white tracking-tight">El Equipo</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Somos un equipo de especialistas en Business Intelligence, IA y Gestión de Proyectos. Nos apasiona facilitar el aprendizaje y la aplicación práctica de conocimientos en entornos corporativos.
-              </p>
-            </div>
-
-            <motion.div 
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-100px" }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-8"
-            >
-              {/* Perfil 1 */}
-              {/* DISEÑO DINÁMICO: Tarjeta con fondo #1A1A2E y borde superior #6C47FF */}
-              <motion.div 
-                variants={itemVariants}
-                className="bg-[#1A1A2E] rounded-[2rem] p-8 border border-[#6C47FF]/30 border-t-[3px] border-t-[#6C47FF] hover:shadow-[0_15px_30px_rgba(108,71,255,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center"
-              >
-                <div className="w-20 h-20 rounded-full mb-6 overflow-hidden border-2 border-[#6C47FF]/20 shadow-inner flex-shrink-0">
-                  <img 
-                    src="https://lh3.googleusercontent.com/d/1MAnRrp1ynTFlvYC260LtT1bG91mHpECd" 
-                    referrerPolicy="no-referrer"
-                    alt="Sofía Aguirre" 
-                    className="w-full h-full object-cover" 
-                  />
-                </div>
-                <h3 className="font-primary text-xl font-bold mb-2 text-white">Sofía Aguirre</h3>
-                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">
-                  Especialista en IA con +5 años optimizando procesos en entornos corporativos.<br />
-                  Founder de <a href="https://www.data-so.com/" target="_blank" rel="noopener noreferrer" className="text-[#6C47FF] font-semibold underline hover:text-[#FF6B6B] transition-colors">data-so.com</a>
-                </p>
-                {/* DISEÑO DINÁMICO: Botones de LinkedIn con brillo */}
-                <a 
-                  href="https://www.linkedin.com/in/sofiaaguirree/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center gap-2 text-sm font-semibold text-[#6C47FF] bg-[#6C47FF]/10 border border-[#6C47FF]/30 px-5 py-2.5 rounded-full hover:bg-[#6C47FF]/20 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(108,71,255,0.4)] transition-all"
-                >
-                  <Linkedin size={16} /> Ver LinkedIn
-                </a>
-              </motion.div>
-
-              {/* Perfil 2 */}
-              {/* DISEÑO DINÁMICO: Tarjeta con fondo #1A1A2E y borde superior #6C47FF */}
-              <motion.div 
-                variants={itemVariants}
-                className="bg-[#1A1A2E] rounded-[2rem] p-8 border border-[#6C47FF]/30 border-t-[3px] border-t-[#6C47FF] hover:shadow-[0_15px_30px_rgba(108,71,255,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center"
-              >
-                <div className="w-20 h-20 rounded-full mb-6 overflow-hidden border-2 border-[#6C47FF]/20 shadow-inner flex-shrink-0">
-                  <img 
-                    src="https://lh3.googleusercontent.com/d/1AKGamcjzo-NwL-EIRYaEC2pahpODVKPj" 
-                    referrerPolicy="no-referrer"
-                    alt="María Virginia Ares" 
-                    className="w-full h-full object-cover" 
-                  />
-                </div>
-                <h3 className="font-primary text-xl font-bold mb-2 text-white">María Virginia Ares</h3>
-                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">Consultora Financiera y Project Manager con experiencia en LATAM y Europa.</p>
-                {/* DISEÑO DINÁMICO: Botones de LinkedIn con brillo */}
-                <a 
-                  href="https://www.linkedin.com/in/mar%C3%ADavirginiaares/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center gap-2 text-sm font-semibold text-[#6C47FF] bg-[#6C47FF]/10 border border-[#6C47FF]/30 px-5 py-2.5 rounded-full hover:bg-[#6C47FF]/20 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(108,71,255,0.4)] transition-all"
-                >
-                  <Linkedin size={16} /> Ver LinkedIn
-                </a>
-              </motion.div>
-
-              {/* Perfil 3 */}
-              {/* DISEÑO DINÁMICO: Tarjeta con fondo #1A1A2E y foto real de Mariela Sanchez */}
-              <motion.div 
-                variants={itemVariants}
-                className="bg-[#1A1A2E] rounded-[2rem] p-8 border border-[#6C47FF]/30 border-t-[3px] border-t-[#6C47FF] hover:shadow-[0_15px_30px_rgba(108,71,255,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center"
-              >
-                <div className="w-20 h-20 rounded-full mb-6 overflow-hidden border-2 border-[#6C47FF]/20 shadow-inner flex-shrink-0">
-                  <img 
-                    src="https://lh3.googleusercontent.com/d/1wQhCPhzmKmxtPDkSLNC53b3OHoaKR49d" 
-                    referrerPolicy="no-referrer"
-                    alt="Mariela Sanchez" 
-                    className="w-full h-full object-cover" 
-                  />
-                </div>
-                <h3 className="font-primary text-xl font-bold mb-2 text-white">Mariela Sanchez</h3>
-                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">Experta en Datos y Analytics. Más de 20 años transformando datos en decisiones estratégicas.</p>
-                {/* DISEÑO DINÁMICO: Botones de LinkedIn con brillo */}
-                <a 
-                  href="https://www.linkedin.com/in/lmsdatos/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center gap-2 text-sm font-semibold text-[#6C47FF] bg-[#6C47FF]/10 border border-[#6C47FF]/30 px-5 py-2.5 rounded-full hover:bg-[#6C47FF]/20 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(108,71,255,0.4)] transition-all"
-                >
-                  <Linkedin size={16} /> Ver LinkedIn
-                </a>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* SERVICIOS SECTION - FONDO CLARO */}
-        <section id="servicios" className="py-24 bg-[#F8F7FF]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <span className="text-[#6C47FF] text-sm font-extrabold tracking-widest uppercase mb-4 block">Eficiencia Práctica</span>
-              <h2 className="font-primary text-3xl md:text-5xl font-extrabold text-[#1A1A2E] tracking-tight">Servicios de Consultoría y Formación</h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-              
-              {/* Card 1 - Visualización de Datos */}
-              {/* DISEÑO DINÁMICO: Tarjeta con border-top #FFD166 */}
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm border-t-4 border-t-[#FFD166] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
-              >
-                <div>
-                  {/* DISEÑO DINÁMICO: Icono con gradiente suave */}
-                  <div className="w-14 h-14 bg-gradient-to-br from-[#FFD166]/20 to-[#FFD166]/5 rounded-2xl flex items-center justify-center mb-8 border border-[#FFD166]/20">
-                    <BarChart3 className="text-[#6C47FF]" size={28} />
-                  </div>
-                  <h3 className="font-primary text-2xl font-bold mb-4 text-[#1A1A2E]">Visualización de Datos</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    Transformamos datos complejos en dashboards intuitivos y visuales para facilitar la toma de decisiones estratégicas.
-                  </p>
-                  
-                  <div className="mb-6 bg-emerald-50 text-emerald-800 px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-emerald-100">
-                    <Zap size={16} className="text-emerald-600 flex-shrink-0" /> 
-                    <span>Reduce hasta un 60% el tiempo de generación de informes.</span>
-                  </div>
-
-                  <ul className="space-y-4 mb-8">
-                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#6C47FF]" size={20} /> Herramientas BI</li>
-                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#6C47FF]" size={20} /> Acompañamiento en la implantación</li>
-                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#6C47FF]" size={20} /> Gestión del cambio</li>
-                  </ul>
-                </div>
-
-                {/* DISEÑO DINÁMICO: Botón Solicitar Propuesta CTA */}
-                <a 
-                  href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-full text-center bg-[#6C47FF] text-white py-3.5 rounded-xl font-bold hover:bg-[#6C47FF]/90 hover:scale-[1.03] transition-all hover:shadow-lg shadow-[#6C47FF]/20"
-                >
-                  Solicitar Propuesta
-                </a>
-              </motion.div>
-
-              {/* Card 2 - Formación en IA y Productividad (HIGHLIGHTED) */}
-              {/* DISEÑO DINÁMICO: Tarjeta destacada con degradado #6C47FF -> #0F0F1A */}
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="bg-gradient-to-b from-[#6C47FF] to-[#0F0F1A] text-white rounded-[2rem] p-10 shadow-2xl relative flex flex-col justify-between transform md:-translate-y-4 border border-[#6C47FF]/20 hover:scale-[1.03] transition-all hover:shadow-[#6C47FF]/30 duration-300"
-              >
-                <div className="absolute top-8 right-8 bg-[#FFD166] text-[#0F0F1A] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-md">
-                  Popular
-                </div>
-                <div>
-                  {/* DISEÑO DINÁMICO: Icono con gradiente suave */}
-                  <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-8 border border-white/20">
-                    <BrainCircuit className="text-white" size={28} />
-                  </div>
-                  <h3 className="font-primary text-2xl font-bold mb-4">Formación en IA y Productividad</h3>
-                  <p className="text-gray-200 mb-4 leading-relaxed">
-                    Capacitación práctica para equipos en herramientas digitales de última generación para multiplicar resultados.
-                  </p>
-
-                  <div className="mb-6 bg-white/10 text-[#FFD166] px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-white/10">
-                    <Zap size={16} className="text-[#FFD166] flex-shrink-0" /> 
-                    <span>Equipos más productivos desde la primera semana.</span>
-                  </div>
-
-                  <ul className="space-y-4 mb-8">
-                    <li className="flex items-center gap-3 font-medium text-gray-100"><CheckCircle2 className="text-[#FFD166]" size={20} /> IAs generativas</li>
-                    <li className="flex items-center gap-3 font-medium text-gray-100"><CheckCircle2 className="text-[#FFD166]" size={20} /> Google Workspace + Gemini</li>
-                    <li className="flex items-center gap-3 font-medium text-gray-100"><CheckCircle2 className="text-[#FFD166]" size={20} /> Automatizaciones con GAS</li>
-                  </ul>
-                </div>
-                <a 
-                  href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-full text-center bg-[#FFD166] text-[#0F0F1A] py-3.5 rounded-xl font-bold hover:bg-[#FFD166]/90 hover:scale-[1.03] transition-all hover:shadow-lg shadow-[#FFD166]/20"
-                >
-                  Agendar Consultoría Gratuita
-                </a>
-              </motion.div>
-
-              {/* Card 3 - Consultoría de Negocio */}
-              {/* DISEÑO DINÁMICO: Tarjeta con border-top #FF6B6B */}
-              <motion.div 
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm border-t-4 border-t-[#FF6B6B] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
-              >
-                <div>
-                  {/* DISEÑO DINÁMICO: Icono con gradiente suave */}
-                  <div className="w-14 h-14 bg-gradient-to-br from-[#FF6B6B]/20 to-[#FF6B6B]/5 rounded-2xl flex items-center justify-center mb-8 border border-[#FF6B6B]/20">
-                    <Database className="text-[#FF6B6B]" size={28} />
-                  </div>
-                  <h3 className="font-primary text-2xl font-bold mb-4 text-[#1A1A2E]">Consultoría de Negocio</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    Análisis exhaustivo y rediseño de procesos administrativos para lograr una gestión verdaderamente eficiente.
-                  </p>
-
-                  <div className="mb-6 bg-emerald-50 text-emerald-800 px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-emerald-100">
-                    <Zap size={16} className="text-emerald-600 flex-shrink-0" /> 
-                    <span>Identifica ineficiencias y recupera horas de trabajo cada semana.</span>
-                  </div>
-
-                  <ul className="space-y-4 mb-8">
-                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#FF6B6B]" size={20} /> Control de gestión ágil</li>
-                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#FF6B6B]" size={20} /> Acompañamiento en la transformación digital</li>
-                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#FF6B6B]" size={20} /> Mejora de procesos</li>
-                  </ul>
-                </div>
-
-                {/* DISEÑO DINÁMICO: Botón Solicitar Propuesta CTA */}
-                <a 
-                  href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-full text-center bg-[#FF6B6B] text-white py-3.5 rounded-xl font-bold hover:bg-[#FF6B6B]/90 hover:scale-[1.03] transition-all hover:shadow-lg shadow-[#FF6B6B]/20"
-                >
-                  Solicitar Propuesta
-                </a>
-              </motion.div>
-
             </div>
           </div>
         </section>
@@ -593,6 +353,253 @@ export default function App() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        {/* SERVICIOS SECTION - FONDO CLARO */}
+        <section id="servicios" className="py-24 bg-[#F8F7FF]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <span className="text-[#6C47FF] text-sm font-extrabold tracking-widest uppercase mb-4 block">Eficiencia Práctica</span>
+              <h2 className="font-primary text-3xl md:text-5xl font-extrabold text-[#1A1A2E] tracking-tight">Servicios de Consultoría y Formación</h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+              
+              {/* Card 1 - Visualización de Datos */}
+              {/* DISEÑO DINÁMICO: Tarjeta con border-top #FFD166 */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm border-t-4 border-t-[#FFD166] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  {/* DISEÑO DINÁMICO: Icono con gradiente suave */}
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#FFD166]/20 to-[#FFD166]/5 rounded-2xl flex items-center justify-center mb-8 border border-[#FFD166]/20">
+                    <BarChart3 className="text-[#6C47FF]" size={28} />
+                  </div>
+                  <h3 className="font-primary text-2xl font-bold mb-4 text-[#1A1A2E]">Visualización de Datos</h3>
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    Transformamos datos complejos en dashboards intuitivos y visuales para facilitar la toma de decisiones estratégicas.
+                  </p>
+                  
+                  <div className="mb-6 bg-emerald-50 text-emerald-800 px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-emerald-100">
+                    <Zap size={16} className="text-emerald-600 flex-shrink-0" /> 
+                    <span>Reduce hasta un 60% el tiempo de generación de informes.</span>
+                  </div>
+
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#6C47FF]" size={20} /> Herramientas BI</li>
+                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#6C47FF]" size={20} /> Acompañamiento en la implantación</li>
+                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#6C47FF]" size={20} /> Gestión del cambio</li>
+                  </ul>
+                </div>
+
+                {/* DISEÑO DINÁMICO: Botón Solicitar Propuesta CTA */}
+                <a 
+                  href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full text-center bg-[#6C47FF] text-white py-3.5 rounded-xl font-bold hover:bg-[#6C47FF]/90 hover:scale-[1.03] transition-all hover:shadow-lg shadow-[#6C47FF]/20"
+                >
+                  Solicitar Propuesta
+                </a>
+              </motion.div>
+
+              {/* Card 2 - Formación en IA y Productividad (HIGHLIGHTED) */}
+              {/* DISEÑO DINÁMICO: Tarjeta destacada con degradado #6C47FF -> #0F0F1A */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-gradient-to-b from-[#6C47FF] to-[#0F0F1A] text-white rounded-[2rem] p-10 shadow-2xl relative flex flex-col justify-between transform md:-translate-y-4 border border-[#6C47FF]/20 hover:scale-[1.03] transition-all hover:shadow-[#6C47FF]/30 duration-300"
+              >
+                <div className="absolute top-8 right-8 bg-[#FFD166] text-[#0F0F1A] text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                  Popular
+                </div>
+                <div>
+                  {/* DISEÑO DINÁMICO: Icono con gradiente suave */}
+                  <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-8 border border-white/20">
+                    <BrainCircuit className="text-white" size={28} />
+                  </div>
+                  <h3 className="font-primary text-2xl font-bold mb-4">Formación en IA y Productividad</h3>
+                  <p className="text-gray-200 mb-4 leading-relaxed">
+                    Capacitación práctica para equipos en herramientas digitales de última generación para multiplicar resultados.
+                  </p>
+
+                  <div className="mb-6 bg-white/10 text-[#FFD166] px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-white/10">
+                    <Zap size={16} className="text-[#FFD166] flex-shrink-0" /> 
+                    <span>Equipos más productivos desde la primera semana.</span>
+                  </div>
+
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-center gap-3 font-medium text-gray-100"><CheckCircle2 className="text-[#FFD166]" size={20} /> IAs generativas</li>
+                    <li className="flex items-center gap-3 font-medium text-gray-100"><CheckCircle2 className="text-[#FFD166]" size={20} /> Google Workspace + Gemini</li>
+                    <li className="flex items-center gap-3 font-medium text-gray-100"><CheckCircle2 className="text-[#FFD166]" size={20} /> Automatizaciones con GAS</li>
+                  </ul>
+                </div>
+                <a 
+                  href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full text-center bg-[#FFD166] text-[#0F0F1A] py-3.5 rounded-xl font-bold hover:bg-[#FFD166]/90 hover:scale-[1.03] transition-all hover:shadow-lg shadow-[#FFD166]/20"
+                >
+                  Agendar Consultoría Gratuita
+                </a>
+              </motion.div>
+
+              {/* Card 3 - Consultoría de Negocio */}
+              {/* DISEÑO DINÁMICO: Tarjeta con border-top #FF6B6B */}
+              <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="bg-white rounded-[2rem] p-10 border border-gray-100 shadow-sm border-t-4 border-t-[#FF6B6B] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  {/* DISEÑO DINÁMICO: Icono con gradiente suave */}
+                  <div className="w-14 h-14 bg-gradient-to-br from-[#FF6B6B]/20 to-[#FF6B6B]/5 rounded-2xl flex items-center justify-center mb-8 border border-[#FF6B6B]/20">
+                    <Database className="text-[#FF6B6B]" size={28} />
+                  </div>
+                  <h3 className="font-primary text-2xl font-bold mb-4 text-[#1A1A2E]">Consultoría de Negocio</h3>
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    Análisis exhaustivo y rediseño de procesos administrativos para lograr una gestión verdaderamente eficiente.
+                  </p>
+
+                  <div className="mb-6 bg-emerald-50 text-emerald-800 px-4 py-2.5 rounded-xl text-sm font-bold flex items-center gap-2 border border-emerald-100">
+                    <Zap size={16} className="text-emerald-600 flex-shrink-0" /> 
+                    <span>Identifica ineficiencias y recupera horas de trabajo cada semana.</span>
+                  </div>
+
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#FF6B6B]" size={20} /> Control de gestión ágil</li>
+                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#FF6B6B]" size={20} /> Acompañamiento en la transformación digital</li>
+                    <li className="flex items-center gap-3 text-gray-800 font-medium"><CheckCircle2 className="text-[#FF6B6B]" size={20} /> Mejora de procesos</li>
+                  </ul>
+                </div>
+
+                {/* DISEÑO DINÁMICO: Botón Solicitar Propuesta CTA */}
+                <a 
+                  href="https://calendar.app.google/L2kNYujpQHvjAvkc8" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full text-center bg-[#FF6B6B] text-white py-3.5 rounded-xl font-bold hover:bg-[#FF6B6B]/90 hover:scale-[1.03] transition-all hover:shadow-lg shadow-[#FF6B6B]/20"
+                >
+                  Solicitar Propuesta
+                </a>
+              </motion.div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* EL EQUIPO - FONDO OSCURO */}
+        {/* DISEÑO DINÁMICO: Fondo oscuro #0F0F1A */}
+        <section id="equipo" className="py-24 bg-[#0F0F1A] border-y border-white/5 relative">
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="font-primary text-3xl md:text-5xl font-extrabold mb-6 text-white tracking-tight">El Equipo</h2>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Somos un equipo de especialistas en Business Intelligence, IA y Gestión de Proyectos. Nos apasiona facilitar el aprendizaje y la aplicación práctica de conocimientos en entornos corporativos.
+              </p>
+            </div>
+
+            <motion.div 
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            >
+              {/* Perfil 1 */}
+              {/* DISEÑO DINÁMICO: Tarjeta con fondo #1A1A2E y borde superior #6C47FF */}
+              <motion.div 
+                variants={itemVariants}
+                className="bg-[#1A1A2E] rounded-[2rem] p-8 border border-[#6C47FF]/30 border-t-[3px] border-t-[#6C47FF] hover:shadow-[0_15px_30px_rgba(108,71,255,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center"
+              >
+                <div className="w-20 h-20 rounded-full mb-6 overflow-hidden border-2 border-[#6C47FF]/20 shadow-inner flex-shrink-0">
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1MAnRrp1ynTFlvYC260LtT1bG91mHpECd" 
+                    referrerPolicy="no-referrer"
+                    alt="Sofía Aguirre" 
+                    className="w-full h-full object-cover" 
+                  />
+                </div>
+                <h3 className="font-primary text-xl font-bold mb-2 text-white">Sofía Aguirre</h3>
+                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">
+                  Especialista en IA con +5 años optimizando procesos en entornos corporativos.<br />
+                  Founder de <a href="https://www.data-so.com/" target="_blank" rel="noopener noreferrer" className="text-[#6C47FF] font-semibold underline hover:text-[#FF6B6B] transition-colors">data-so.com</a>
+                </p>
+                {/* DISEÑO DINÁMICO: Botones de LinkedIn con brillo */}
+                <a 
+                  href="https://www.linkedin.com/in/sofiaaguirree/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 text-sm font-semibold text-[#6C47FF] bg-[#6C47FF]/10 border border-[#6C47FF]/30 px-5 py-2.5 rounded-full hover:bg-[#6C47FF]/20 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(108,71,255,0.4)] transition-all"
+                >
+                  <Linkedin size={16} /> Ver LinkedIn
+                </a>
+              </motion.div>
+
+              {/* Perfil 2 */}
+              {/* DISEÑO DINÁMICO: Tarjeta con fondo #1A1A2E y borde superior #6C47FF */}
+              <motion.div 
+                variants={itemVariants}
+                className="bg-[#1A1A2E] rounded-[2rem] p-8 border border-[#6C47FF]/30 border-t-[3px] border-t-[#6C47FF] hover:shadow-[0_15px_30px_rgba(108,71,255,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center"
+              >
+                <div className="w-20 h-20 rounded-full mb-6 overflow-hidden border-2 border-[#6C47FF]/20 shadow-inner flex-shrink-0">
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1AKGamcjzo-NwL-EIRYaEC2pahpODVKPj" 
+                    referrerPolicy="no-referrer"
+                    alt="María Virginia Ares" 
+                    className="w-full h-full object-cover" 
+                  />
+                </div>
+                <h3 className="font-primary text-xl font-bold mb-2 text-white">María Virginia Ares</h3>
+                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">Consultora Financiera y Project Manager con experiencia en LATAM y Europa.</p>
+                {/* DISEÑO DINÁMICO: Botones de LinkedIn con brillo */}
+                <a 
+                  href="https://www.linkedin.com/in/mar%C3%ADavirginiaares/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 text-sm font-semibold text-[#6C47FF] bg-[#6C47FF]/10 border border-[#6C47FF]/30 px-5 py-2.5 rounded-full hover:bg-[#6C47FF]/20 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(108,71,255,0.4)] transition-all"
+                >
+                  <Linkedin size={16} /> Ver LinkedIn
+                </a>
+              </motion.div>
+
+              {/* Perfil 3 */}
+              {/* DISEÑO DINÁMICO: Tarjeta con fondo #1A1A2E y foto real de Mariela Sanchez */}
+              <motion.div 
+                variants={itemVariants}
+                className="bg-[#1A1A2E] rounded-[2rem] p-8 border border-[#6C47FF]/30 border-t-[3px] border-t-[#6C47FF] hover:shadow-[0_15px_30px_rgba(108,71,255,0.15)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center"
+              >
+                <div className="w-20 h-20 rounded-full mb-6 overflow-hidden border-2 border-[#6C47FF]/20 shadow-inner flex-shrink-0">
+                  <img 
+                    src="https://lh3.googleusercontent.com/d/1wQhCPhzmKmxtPDkSLNC53b3OHoaKR49d" 
+                    referrerPolicy="no-referrer"
+                    alt="Mariela Sanchez" 
+                    className="w-full h-full object-cover" 
+                  />
+                </div>
+                <h3 className="font-primary text-xl font-bold mb-2 text-white">Mariela Sanchez</h3>
+                <p className="text-gray-300 mb-6 flex-grow text-sm leading-relaxed">Experta en Datos y Analytics. Más de 20 años transformando datos en decisiones estratégicas.</p>
+                {/* DISEÑO DINÁMICO: Botones de LinkedIn con brillo */}
+                <a 
+                  href="https://www.linkedin.com/in/lmsdatos/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 text-sm font-semibold text-[#6C47FF] bg-[#6C47FF]/10 border border-[#6C47FF]/30 px-5 py-2.5 rounded-full hover:bg-[#6C47FF]/20 hover:scale-[1.03] hover:shadow-[0_0_15px_rgba(108,71,255,0.4)] transition-all"
+                >
+                  <Linkedin size={16} /> Ver LinkedIn
+                </a>
+              </motion.div>
+            </motion.div>
           </div>
         </section>
 
